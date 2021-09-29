@@ -44,7 +44,7 @@
                 {% for cart_item in cart_items %}
                 <tr>
                     <td >
-                       <img src="{{cart_item.product.img.url}}" alt="" class="float-left rounded custom_image">
+                        <img src="{{cart_item.product.img.url}}" alt="" class="float-left rounded custom_image">
 
                     </td>
                     <td class="text-left">
@@ -61,16 +61,16 @@
                         $ {{cart_item.sub_total}}
                     </td>
                     {% if cart_item.quantity < cart_item.product.stock %}
-                    <td>
-                        <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="custom_a"><i class="fas fa-plus"></i></a>&nbsp;
-                        <a href="{% url 'cart:cart_remove' cart_item.product.id %}" class="custom_a"><i class="fas fa-minus"></i></a>&nbsp;
-                        <a href="{% url 'cart:full_remove' cart_item.product.id %}" class="custom_icon"><i class="fas fa-trash"></i></a>
+                    <td class="resize">
+                        <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="custom_a size"><i class="fas fa-plus"></i></a>
+                        <a href="{% url 'cart:cart_remove' cart_item.product.id %}" class="custom_a size"><i class="fas fa-minus "></i></a>
+                        <a href="{% url 'cart:full_remove' cart_item.product.id %}" class="custom_icon size"><i class="fas fa-trash"></i></a>
 
                     </td>
                     {% else %}
                      <td>
-                       &nbsp;<a href="{% url 'cart:cart_remove' cart_item.product.id %}" class="custom_a"><i class="fas fa-minus"></i></a>&nbsp;
-                        <a href="{% url 'cart:full_remove' cart_item.product.id %}" class="custom_icon"><i class="fas fa-trash"></i></a>
+                       <a href="{% url 'cart:cart_remove' cart_item.product.id %}" class="custom_a size"><i class="fas fa-minus"></i></a>
+                        <a href="{% url 'cart:full_remove' cart_item.product.id %}" class="custom_icon size"><i class="fas fa-trash"></i></a>
                     </td>
                     {% endif %}
                 </tr>
@@ -103,9 +103,11 @@
 
     </table>
     <div class="mx-auto">
-        <a href="{%url 'store:allProductCat' %}" class="btn btn-secondary btn-block my_custom_button">Continue Shopping</a>
-       <a href="{%url 'store:allProductCat' %}" class="btn btn-secondary btn-block my_custom_button">Payment</a>
+        <a href="{%url 'store:allProductCat' %}" class="btn btn-secondary btn-block my_custom_button">Continue Shopping</a>&nbsp;&nbsp;
+         <a href="{% url 'store:allProductCat' %}" class="btn btn-secondary btn-block my_custom_button">Payment</a>
+
     </div>
+
 </div>
     </div>
 </div>
