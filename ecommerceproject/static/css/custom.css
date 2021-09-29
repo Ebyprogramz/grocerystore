@@ -1,7 +1,8 @@
 body {
 font-family: 'Roboto', sans-serif;
-
+position:relative;
 }
+
 
 .nav-item {
 letter-spacing:0.15em;
@@ -15,6 +16,7 @@ letter-spacing:0.15em;
 font-size:1rem;
 text-transform:uppercase;
 }
+
 .my_footer {
 
 margin-top:7vh;
@@ -45,7 +47,6 @@ height:60px;
 
 }
 
-
 .my_row_class {
 padding-top:1em;
 
@@ -71,7 +72,7 @@ height:auto;
 }
 
 .my_title{
-font-size:1.5rem;
+font-size:1.2rem;
 text-transform:uppercase;
 letter-spacing:0.08em;
 text-align:center;
@@ -125,12 +126,12 @@ text-decoration:underline;
 font-family:cursive;
 
 }
-my_prod_text{
+.my_prod_text{
 padding-right:1em;
 }
-.check {
-padding-top:0.55em;
-}
+/*.check {*/
+/*padding-top:1.55em;*/
+/*}*/
 
 .my_search_text{
 padding-top:2em;
@@ -157,13 +158,16 @@ text-transform:uppercase;
 
 .custom_a {
 text-decoration:none;
+
 }
 .custom_icon{
 text-decoration:none;
 color:red !important;
+
 }
 .my_custom_button{
 margin-top:0.50em;
+
 }
 
 .custom_image {
@@ -175,3 +179,12 @@ width:55%;
 font-size:0.93rem;
 }
 
+.size {
+    font-size:0.95rem;
+    padding:2.55px;
+}
+.resize {
+
+    width:15%;
+
+}
