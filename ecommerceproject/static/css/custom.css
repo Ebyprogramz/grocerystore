@@ -15,15 +15,36 @@ letter-spacing:0.15em;
 font-size:1rem;
 text-transform:uppercase;
 }
-.foot-change {
- background-color:ivory;
- min-height:5vh;
+.my_footer {
+
+margin-top:7vh;
+background-color:ivory;
+height:60px;
+
 }
-.foot-change p {
- padding-top:1em;
- padding-bottom:1em;
- font-size:1rem;
+#place {
+    /*border:2px solid red;*/
+    display:flex;
+    flex-direction:column;
+   justify-content:center;
+   align-items:center;
+    position:absolute;
+    /*bottom:0;*/
+    top:99%;
+    left:50%;
+    /*right:30%;*/
+    transform:translate(-50%,-50%);
+    width:100%;
+
 }
+
+
+.my_footer p {
+ padding-top:18px;
+ font-size:14px;
+
+}
+
 
 .my_row_class {
 padding-top:1em;
